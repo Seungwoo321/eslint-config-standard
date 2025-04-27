@@ -1,4 +1,4 @@
-# eslint-config-standard [![CI][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
+# eslint-plugin-standard [![CI][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
 [ci-image]: https://github.com/standard/eslint-config-standard/actions/workflows/ci.yml/badge.svg?branch=master
 [ci-url]: https://github.com/standard/eslint-config-standard/actions/workflows/ci.yml
@@ -8,6 +8,8 @@
 [downloads-url]: https://npmjs.org/package/eslint-config-standard
 [standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [standard-url]: https://standardjs.com
+
+> This package is a modified fork of the popular [eslint-config-standard](https://github.com/standard/eslint-config-standard) configuration.
 
 #### The ESLint config of [JavaScript Standard Style](http://standardjs.com)
 
@@ -20,13 +22,13 @@ This module is for advanced users. You probably want to use [`standard`](http://
 This package exports [a flat ESLint configuration](https://eslint.org/docs/latest/use/configure/configuration-files-new).
 
 ```bash
-npm install --save-dev eslint eslint-config-standard
+npm install --save-dev @seungwoo321/eslint-plugin-standard
 ```
 
 
 Example `eslint.config.js`:
 ```js
-const standard = require('eslint-config-standard')
+import standard from '@seungwoo321/eslint-plugin-standard'
 
 module.exports = [
     standard,
@@ -67,4 +69,4 @@ For the full listing of rules, editor plugins, FAQs, and more, visit the main
 
 ## License
 
-MIT. Copyright (c) [Feross Aboukhadijeh](http://feross.org).
+MIT. Copyright (c) [Seungwoo321](https://github.com/Seungwoo321).

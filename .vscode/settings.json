@@ -1,0 +1,21 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  "prettier.requireConfig": true,
+  "prettier.configPath": ".prettierrc.json",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.singleAttributePerLine": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.tsserver.enableTracing": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "reactSnippets.settings.importReactOnTop": false
+}
