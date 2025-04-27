@@ -7,7 +7,7 @@
   "singleAttributePerLine": true,
   "bracketSameLine": false,
   "jsxSingleQuote": true,
-  "printWidth":80,
+  "printWidth": 80,
   "proseWrap": "preserve",
   "quoteProps": "preserve",
   "semi": false,
@@ -17,5 +17,5 @@
   "useTabs": false,
   "vueIndentScriptAndStyle": false,
   "embeddedLanguageFormatting": "auto",
-  "experimentalTernaries": false,
+  "experimentalTernaries": false
 }

@@ -1,6 +1,6 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "prettier.requireConfig": true,
   "prettier.configPath": ".prettierrc.json",
   "[javascriptreact]": {
@@ -13,7 +13,6 @@
   "typescript.tsdk": "./node_modules/typescript/lib",
   "typescript.tsserver.enableTracing": true,
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
-  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
   "files.associations": {
     "*.json": "jsonc"
   },
