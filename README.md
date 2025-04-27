@@ -28,14 +28,16 @@ npm install --save-dev @seungwoo321/eslint-plugin-standard
 
 Example `eslint.config.js`:
 ```js
+import { defineConfig } from 'eslint/config'
 import standard from '@seungwoo321/eslint-plugin-standard'
 
-module.exports = [
-    standard,
-    {
-      // your overrides here
-    }
-] 
+export default defineConfig([
+  {
+    extends: [
+      standard.configs.recommended
+    ],
+  }
+])
 ```
 
 ### Looking for something easier than this?

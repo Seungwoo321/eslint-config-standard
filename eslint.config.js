@@ -7,12 +7,12 @@ import standard from './lib/index.js'
 import pluginImport from 'eslint-plugin-import'
 
 export default defineConfig([
-  standard,
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,jsx,tsx}'],
     ignores: [
       'jest.config.ts',
-      '**/*.d.ts'
+      '**/*.d.ts',
+      '**/*.spec.ts'
     ],
     plugins: {
       js,
@@ -21,7 +21,8 @@ export default defineConfig([
     },
     extends: [
       js.configs.recommended,
-      tseslint.configs.recommended
+      tseslint.configs.recommended,
+      standard.configs.recommended
     ]
   }
 ])
