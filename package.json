@@ -12,7 +12,7 @@
     "url": "https://github.com/Seungwoo321/eslint-plugin-standard/issues"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=18.0.0"
   },
   "files": [
     "CHANGELOG.md",
