@@ -6,7 +6,7 @@ import pluginImport from 'eslint-plugin-import'
 export default defineConfig([
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,jsx,tsx}'],
-    ignores: ['jest.config.ts', '**/*.d.ts', '**/*.spec.ts'],
+    ignores: ['jest.config.ts', '**/*.d.ts', '**/*.spec.ts', 'lib/**'],
     plugins: {
       js,
       import: pluginImport
