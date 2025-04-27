@@ -1,12 +1,19 @@
 {
-  "extends": "tsconfigs/nodejs-module",
   "compilerOptions": {
-    "outDir": "lib"
+    "typeRoots": ["node_modules/@types", "types"],
+    "target": "esnext",               // 최종 JavaScript 코드의 버전
+    "module": "commonjs",             // 모듈 시스템 설정
+    "lib": ["es2015", "esnext"],      // ES6 이상 기능 사용
+    "skipLibCheck": true,             // 라이브러리 타입 검사 건너뛰기
+    "declaration": true,              // .d.ts 파일 생성
+    "outDir": "./lib",                // .js 파일과 .d.ts 파일을 lib 폴더에 저장
+    "esModuleInterop": true,          // ES 모듈과 CommonJS 간의 호환성
+    "strict": true   
   },
   "include": [
-    ".eslintrc.js",
-    "commitlint.config.js",
-    "src/**/*.ts"
-  ]
+    "src/**/*.ts",                    // src 폴더 내 모든 .ts 파일을 컴파일 대상으로 포함
+    "src/**/*.tsx"  
+  ],
+  "exclude": ["node_modules"]
 }
 
