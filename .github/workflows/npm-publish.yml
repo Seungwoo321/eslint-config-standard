@@ -33,7 +33,7 @@ jobs:
         run: pnpm test
       
       - name: Build (if needed)
-        run: pnpm run build --if-present
+        run: pnpm build
       
       # 버전 자동 증가 및 태그 생성 (semantic-release 사용)
       - name: Semantic Release
