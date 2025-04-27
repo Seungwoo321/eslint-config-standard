@@ -1,6 +1,6 @@
 # eslint-plugin-standard [![CI][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
-[ci-image]: https://github.com/standard/eslint-config-standard/actions/workflows/ci.yml/badge.svg?branch=master
+[ci-image]: https://github.com/Seungwoo321/eslint-plugin-standard/actions/workflows/ci.yml/badge.svg?branch=main
 [ci-url]: https://github.com/standard/eslint-config-standard/actions/workflows/ci.yml
 [npm-image]: https://img.shields.io/npm/v/eslint-config-standard.svg
 [npm-url]: https://npmjs.org/package/eslint-config-standard
@@ -25,17 +25,15 @@ This package exports [a flat ESLint configuration](https://eslint.org/docs/lates
 npm install --save-dev @seungwoo321/eslint-plugin-standard
 ```
 
-
 Example `eslint.config.js`:
+
 ```js
 import { defineConfig } from 'eslint/config'
 import standard from '@seungwoo321/eslint-plugin-standard'
 
 export default defineConfig([
   {
-    extends: [
-      standard.configs.recommended
-    ],
+    extends: [standard.configs.recommended]
   }
 ])
 ```
@@ -71,4 +69,4 @@ For the full listing of rules, editor plugins, FAQs, and more, visit the main
 
 ## License
 
-MIT. Copyright (c) [Seungwoo321](https://github.com/Seungwoo321).
+MIT. Copyright (c) [Seungwoo321](https://github.com/Seungwoo321)
