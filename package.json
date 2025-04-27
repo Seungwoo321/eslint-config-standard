@@ -1,0 +1,92 @@
+{
+  "name": "@seungwoo321/eslint-plugin-standard",
+  "type": "module",
+  "description": "JavaScript Standard Style - ESLint Shareable Config",
+  "version": "1.0.0",
+  "author": {
+    "name": "Seungwoo321",
+    "email": "seungwoo321@gmail.com",
+    "url": "https://github.com/Seungwoo321"
+  },
+  "bugs": {
+    "url": "https://github.com/Seungwoo321/eslint-plugin-standard/issues"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "lib/index.d.ts",
+    "lib/index.js"
+  ],
+  "dependencies": {
+    "eslint-plugin-import": "^2.31.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@types/eslint": "^9.6.1",
+    "@types/jest": "^29.5.14",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "eslint": "^9.25.1",
+    "eslint-plugin-import": "^2.31.0",
+    "jest": "^29.7.0",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^24.2.3",
+    "ts-jest": "^29.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.31.0"
+  },
+  "homepage": "https://github.com/Seungwoo321/eslint-plugin-standard",
+  "keywords": [
+    "JavaScript Standard Style",
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "enforce",
+    "eslint",
+    "eslintconfig",
+    "hint",
+    "jscs",
+    "jshint",
+    "lint",
+    "policy",
+    "quality",
+    "simple",
+    "standard",
+    "standard style",
+    "style",
+    "style checker",
+    "style linter",
+    "verify"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "peerDependencies": {
+    "eslint": "^9.25.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Seungwoo321/eslint-plugin-standard.git"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "pnpm clean && tsc",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/Seungwoo321"
+    }
+  ]
+}
