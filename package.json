@@ -2,12 +2,11 @@
   "name": "@seungwoo321/eslint-plugin-standard",
   "type": "module",
   "description": "JavaScript Standard Style - ESLint Shareable Config",
-  "version": "1.0.0",
-  "author": {
-    "name": "Seungwoo321",
-    "email": "seungwoo321@gmail.com",
-    "url": "https://github.com/Seungwoo321"
+  "version": "1.0.0-alpha.0",
+  "publishConfig": {
+    "access": "public"
   },
+  "author": "Seungwoo, Lee <seungwoo321@gmail.com>",
   "bugs": {
     "url": "https://github.com/Seungwoo321/eslint-plugin-standard/issues"
   },
