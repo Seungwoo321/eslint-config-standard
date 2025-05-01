@@ -1,12 +1,21 @@
 import type { Config } from 'jest';
 
 const config: Config = {
-    preset: 'ts-jest',
-    testEnvironment: 'node',
-    transform: {
-        '^.+\\.tsx?$': 'ts-jest',
-    },
-    moduleFileExtensions: ['ts', 'tsx', 'js'],
+  testEnvironment: 'node',
+  transform: {
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        useESM: true,
+        tsconfig: './tsconfig.json'
+      }
+    ]
+  },
+  extensionsToTreatAsEsm: ['.ts', '.tsx'],
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1'
+  },
+  // transformIgnorePatterns: ['node_modules/(?!(@stylistic|eslint-plugin-.*)/)']
 };
 
 export default config;

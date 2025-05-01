@@ -1,8 +1,8 @@
 import js from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import { defineConfig } from 'eslint/config'
-import standard from './lib/index.js'
 import pluginImport from 'eslint-plugin-import'
+import standard from './lib/index.js'
 export default defineConfig([
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,jsx,tsx}'],
